@@ -1,0 +1,7 @@
+.shop-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+.product-container {
+  margin-left: 10%;
+}

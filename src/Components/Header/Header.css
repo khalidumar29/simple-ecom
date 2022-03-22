@@ -1,0 +1,21 @@
+.header {
+  background: #1c2b35;
+  /*height: 80px;*/
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10%;
+  height: 80px;
+}
+
+.nav-link a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 40px;
+}
+.nav-link a:hover {
+  color: #ffa500;
+}
