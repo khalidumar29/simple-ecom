@@ -28,9 +28,9 @@ const Product = ({ handleAddToCart, product }) => {
       <button onClick={() => handleAddToCart(product)} className="btn-cart">
         <p style={{ fontSize: '17px' }}>
           Add To Cart
-          <p style={style}>
+          <span style={style}>
             <FontAwesomeIcon icon={faShoppingCart} />
-          </p>
+          </span>
         </p>
       </button>
     </div>
