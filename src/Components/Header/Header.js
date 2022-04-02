@@ -6,13 +6,14 @@ const Header = () => {
   return (
     <div className="header">
       <nav>
-        <a href="#">
+        <a href="home">
           <img src={logo} alt="" />
         </a>
         <div className="nav-link">
-          <a href="#">Order</a>
-          <a href="#">Order Review</a>
-          <a href="#">Manage Inventor</a>
+          <a href="/home">Shop</a>
+          <a href="/oreders">Orders</a>
+          <a href="/inventory">Inventor</a>
+          <a href="/about">About</a>
         </div>
       </nav>
     </div>
