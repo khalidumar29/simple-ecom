@@ -8,6 +8,8 @@ import Shop from './Components/Shop/Shop';
 import About from './Components/About/About';
 import Login from './Components/Login/Login';
 import SingUp from './Components/SingUp/SingUp';
+import RequireAuth from './Components/RequireAuth/RequireAuth';
+import Shipment from './Components/Shipment/Shipment';
 
 function App() {
   return (
@@ -17,7 +19,22 @@ function App() {
         <Route path="/" element={<Shop />}></Route>
         <Route path="/home" element={<Shop />}></Route>
         <Route path="/oreders" element={<Orders />}></Route>
-        <Route path="/inventory" element={<Inventory />}></Route>
+        <Route
+          path="/inventory"
+          element={
+            <RequireAuth>
+              <Inventory />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/shipment"
+          element={
+            <RequireAuth>
+              <Shipment></Shipment>
+            </RequireAuth>
+          }
+        ></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/singup" element={<SingUp />}></Route>
