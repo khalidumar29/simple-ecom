@@ -23,7 +23,18 @@ const Header = () => {
           <Link to="/inventory">Inventor</Link>
           <Link to="/about">About</Link>
           {user ? (
-            <button onClick={logOut}>sign out</button>
+            <button
+              style={{
+                background: 'none',
+                border: 'none',
+                color: '#fff',
+                fontSize: '17px',
+                marginLeft: '25px',
+              }}
+              onClick={logOut}
+            >
+              Sign Out
+            </button>
           ) : (
             <Link to="/login">Login</Link>
           )}
